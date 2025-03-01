@@ -13,7 +13,7 @@ def electro_thermal_simulation(
     T_0=300.0,  # Reference temperature
     k_0=1.0,  # Base thermal conductivity
     max_iterations=20,  # Maximum iterations for nonlinear coupling
-    tolerance=1e-6,  # Convergence tolerance
+    tolerance=1e-8,  # Convergence tolerance
     V_boundary=10.0,  # Voltage at one boundary
     T_boundary=300.0,  # Temperature at boundaries
 ):
@@ -162,3 +162,4 @@ if __name__ == "__main__":
     File("results/power_density.pvd") << P
     
     print("Simulation completed and results saved.")
+
