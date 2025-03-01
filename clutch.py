@@ -16,6 +16,8 @@ def electro_thermal_simulation(
     tolerance=1e-8,  # Convergence tolerance
     V_boundary=10.0,  # Voltage at one boundary
     T_boundary=300.0,  # Temperature at boundaries
+    h = None, #Heat transfer coefficient
+    TIM_thickness = None #TIM thickness
 ):
     """
     Solves coupled electro-thermal problem with the following equations:
